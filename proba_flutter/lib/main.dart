@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+// flutter create nombre_archivo
 void main(){
   runApp(MiAplicacion());
 }
