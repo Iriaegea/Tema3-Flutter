@@ -1,28 +1,33 @@
 import 'package:flutter/material.dart';
 
+
+
 void main(List<String> args) {
-  runApp(MyWidget());
+  runApp(MiApp());
 }
 
-
-
-class MyWidget extends StatelessWidget {
-  const MyWidget ({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(home: PantallaPrincipal(), title: "Titulo App Iria",);
-  }
-}
-
-class PantallaPrincipal extends StatelessWidget {
+class MiApp extends StatelessWidget {
   const new({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("Titulo da barra"),),
-      body: Text("Hola")
-    );
+    return MaterialApp(title: "Página de Iria",
+    home: paginaPrincipal());
   }
 }
+
+
+class paginaPrincipal extends StatelessWidget {
+  const new({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(appBar: AppBar(
+      title:Text("Tituloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+       textAlign: TextAlign.center, maxLines: 2, overflow: TextOverflow.ellipsis, style: TextStyle(color: Colors.amber),) ),
+      body:Column(children: [
+        Text("hola")
+      ],) );
+  }
+}
+
